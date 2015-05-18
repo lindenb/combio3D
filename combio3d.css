@@ -1,3 +1,10 @@
+.layout {
+	font-size:12px;
+	}
+input {
+	font-size:12px;
+	}
+
 pre {
 	border: 1px solid black; 
 	background-color:rgb(240,240,240);

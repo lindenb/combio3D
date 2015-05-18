@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	>
 <head>
-   <title></title>
+   <title>Combio3D</title>
    <link href="combio3d.css" rel="stylesheet"/>
    <script src="combio3d.js"></script>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
@@ -9,14 +12,25 @@
 </head>
 <body>
 <h1>BioComb3D</h1>
-
+<p></p>
 <h2>Layout</h2>
 <div class="layout">
-<div><img src="biocomb3d.png"/></div>
-<label for="N">N</label><input name="N" id="N" type="number" placeholder="N"/>
-<label for="n3">n3</label><input name="n3" id="n3" type="number" placeholder="N3"/>
+<label for="a">A</label><input name="a" id="a" type="number" placeholder="a" value="20"/>
+<label for="b">B</label><input name="b" id="b" type="number" placeholder="b" value="20"/>
+<label for="c">C</label><input name="c" id="c" type="number" placeholder="c" value="20"/>
+<label for="d">D</label><input name="d" id="d" type="number" placeholder="d" value="20"/>
+<label for="e">E</label><input name="e" id="e" type="number" placeholder="e" value="10"/>
+<label for="f">F</label><input name="f" id="f" type="number" placeholder="f" value="10"/>
+<label for="thickness">Thickness</label><input name="thickness" id="thickness" type="number" placeholder="Thickness" value="3"/>
+<label for="nTeeth">Teeth</label><input name="nTeeth" id="nTeeth" type="number" placeholder="Number of Teeth" value="14"/>
 </div>
 <div>
+<svg id="image" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+ <g style="stroke:black;stroke-width:1;">
+   <polygon id="path1" style="fill:lightgray;" />
+   <g id="transform"><polygon id="path0" style="fill:black;"/></g>
+ </g>
+</svg>
 </div>
 <h2>Output</h2>
 <pre id="output"></pre>
